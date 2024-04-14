@@ -309,7 +309,7 @@ void Quiz(){
             printf("Choose Answer : ");
             fflush(stdin);
             gets(choose);
-
+	    strupr(choose);
             if(strcmp(choose,Q.Ans)==0){
                 printf("Correct Answer : %s \n",Q.Ans);
                 points+=5;
